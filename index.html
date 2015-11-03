@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Generator</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<!--<script type="text/javascript" src="main.js"></script>-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1">@</span>
+		<input type="text" class="form-control" placeholder="Random Keyword" aria-describedby="basic-addon1">
+	</div>
+	<div class="btn-group" role="group" aria-label="...">
+		<button type="button" class="btn btn-default">Generate Funny Password!</button>
+	</div>
+	<div class="pass">
+
+	</div>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		console.log("ready");
+		var library = require('./module.js');
+
+		console.log(library.anvGenerator("A"));
+		console.log(library.anvGenerator("V"));
+		console.log(library.anvGenerator("D"));
+
+		console.log(library.countPassGenerator("gr", "facebook"));
+		console.log(library.countPassGenerator(library.anvGenerator("D"), "facebook"));
+		console.log(library.countPassGenerator("keyword", "gmail"));
+		console.log(library.randPassGenerator(13));
+		$('.pass').innerHTML = library.anvGenerator("V");
+	});
+</script>
+</html>
