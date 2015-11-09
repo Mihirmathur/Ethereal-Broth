@@ -6,13 +6,31 @@
     color:white;
 }
 
+#keyword_field_count {
+    border:none;
+}
+
+#keyword_field_count:focus {
+    outline-width:none;
+    outline:none;
+    border:none;
+}
+
+#website_field {
+    border:none;
+}
+
+#website_field:focus {
+    outline-width:none;
+    outline:none;
+    border:none;
+}
+
 .pink_color{
 /*    color:#993333;*/
 }
 
-.pink_button{
-/*    background-color:#993333;   */
-}
+
 
 .panel {
     margin-top: 300px;
