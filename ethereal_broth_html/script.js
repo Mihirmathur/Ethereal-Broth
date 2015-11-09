@@ -82,12 +82,12 @@ $(document).ready(function(){
     })
     
     $('#funny_button').click(function(){
-<<<<<<< HEAD
+
             $('#funny_password').html('<p class = "pw">'+anvGenerator()+'</p>');
-=======
-            console.log('anv test');
-            $('#funny_password').html('<p>'+anvGenerator()+'</p>');
->>>>>>> ea00c9f1c8303efd5f2a8d4ea74ee64d2e9771a2
+
+            console.log(anvGenerator());
+            $('#funny_password').html('<p class = "pw">'+anvGenerator()+'</p>');
+
     });
     
     $('#keyword_button').click(function(){
@@ -98,12 +98,11 @@ $(document).ready(function(){
     $('#keyword_field').keydown(function(event){ 
             var keyCode = (event.keyCode ? event.keyCode : event.which);   
             if (keyCode == 13) {
-<<<<<<< HEAD
+
                 var $keyword = $('input[name=fname]').val(); 
                     $('#keyword_password').html('<p class = "pw">'+countPassGenerator($('input[name=fname]').val(), $('input[name=wname]').val())+'</p>');
-=======
                 $('#keyword_password').html('<p>'+countPassGenerator($('input[name=fname]').val(), $('input[name=wname]').val())+'</p>');
->>>>>>> ea00c9f1c8303efd5f2a8d4ea74ee64d2e9771a2
+
             }
     });
     

@@ -12,33 +12,42 @@ h4{
     color:white;
 }
 
-<<<<<<< HEAD
 #ethereal_title{
 -webkit-transition: all .5s ease;
 }
 
 #ethereal_title:hover{
 	color: #993333;
-=======
-#keyword_field_count {
+}
+
+#keyword_field_count{
     border:none;
+    padding-bottom: 5px;
+  opacity: .1;
+    -webkit-transition: all .5s ease;
 }
 
 #keyword_field_count:focus {
     outline-width:none;
     outline:none;
-    border:none;
+    opacity: 1;
+    border-bottom: solid 1px #993333;
 }
 
 #website_field {
     border:none;
+    opacity: .1;
+    padding-bottom: 5px;
+    border-bottom: solid 0px #993333;
+    -webkit-transition: all .5s ease;
 }
 
 #website_field:focus {
     outline-width:none;
     outline:none;
-    border:none;
->>>>>>> ea00c9f1c8303efd5f2a8d4ea74ee64d2e9771a2
+    opacity: 1;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #993333;
 }
 
 .pink_color{
@@ -56,7 +65,7 @@ h4{
 	font-weight: light;
 }
 
-.pw{
+.pw {
 	display: inline-block;
 	font-family: 'Amatic SC', cursive;
 	font-weight: 700;
@@ -72,6 +81,4 @@ h4{
 
 .pw:hover{
 	border-radius: 20px;
-
-	
 }
