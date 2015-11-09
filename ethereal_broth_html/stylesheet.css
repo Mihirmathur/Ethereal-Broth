@@ -1,9 +1,23 @@
-
-
+h1{
+	font-family: 'Amatic SC', cursive;
+	font-weight: 400;
+	font-size: 4em;
+}
+h4{
+	font-weight: lighter;
+}
 #funny_button {
     border-radius: 5px;
 /*    background-color:#993333;*/
     color:white;
+}
+
+#ethereal_title{
+-webkit-transition: all .5s ease;
+}
+
+#ethereal_title:hover{
+	color: #993333;
 }
 
 .pink_color{
@@ -17,4 +31,28 @@
 .panel {
     margin-top: 300px;
     text-align:center; 
+}
+
+.desc{
+	font-weight: light;
+}
+
+.pw{
+	display: inline-block;
+	font-family: 'Amatic SC', cursive;
+	font-weight: 700;
+	font-size: 2em;
+	padding-bottom: 10px;
+	padding: 7px 10px 7px 10px;
+	border: 1px dashed white;
+	border-radius: 5px;
+	border: 1px dashed #993333;
+	color: #993333;
+	-webkit-transition: all .5s ease;
+}
+
+.pw:hover{
+	border-radius: 20px;
+
+	
 }

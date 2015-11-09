@@ -1,90 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-          <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link rel="stylesheet" href="stylesheet.css"/>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-          <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script src="script.js" type="text/javascript"></script>
+<head>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheet.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="script.js" type="text/javascript"></script>
 
-        <title>ethereal_broth</title>
-    </head>
-    <body>
-        
-        <div class="container" style="text-align:center">
-            <br><br>
-            <h1 id="ethereal_title">ethereal broth</h1>
-            <br>
-        </div>
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <ul class="nav nav-tabs pink_color">
-                        
-                        
-                      <li class="active"><a data-toggle="tab" href="#funny">funny password</a></li>
-                      <li><a data-toggle="tab" href="#keyword">keyword</a></li>
-                      <li><a data-toggle="tab" href="#random">random</a></li>
-                        
-                        
-                    </ul>
-                
-                
-                </div>
-            
-            </div>
+  <title>ethereal_broth</title>
+</head>
+<body>
 
+    <div class="container" style="text-align:center">
+        <br><br>
+        <h1 id="ethereal_title">Ethereal Broth</h1>
+        <h4> A one-click solution for strong and easy to remember passwords.</h4>
+        <br><br><br>
+    </div>
+
+    <div class="container">
         <div class="row">
-                <div id="my-tab-content" class="tab-content" style="text-align:center">
-                    
-                    <br><br><br>
-                    
-                    <div class="tab-pane fade in active" id="funny">
-                        <p><a id="funny_button" class="btn btn-primary btn-lg" href="#" role="button">get password!</a></p>
-                        <br><br>
-                        <div id="funny_password" style="margin-top:50px text-align:center"></div>
-                    </div>
-                    <div class="tab-pane fade" id="keyword">
-                        <form>
-                          enter keyword: <input type="text" name="fname" id="keyword_field_count"><br>
-                          enter website name: <input type="text" name="wname" id="website_field"><br>
+            <div class="col-md-8 col-md-offset-2">
+                <ul class="nav nav-tabs pink_color">
 
-                            <br><br>
-                            <p><a id="keyword_button" class="btn btn-primary btn-lg" href="#" role="button">get password!</a></p>
-<!--                            <button type="button" id="keyword_button">get password!!</button>-->
-                        </form>
-<!--                        <p><a class="btn btn-primary btn-lg" href="#" role="button">get password!</a></p>-->
-                        <br><br>
-                        <div id="keyword_password" style="margin-top:50px text-align:center"></div>
 
-                    </div>
-                    <div class="tab-pane fade" id="random">
-                        <form>
-                          enter password length: <input type="text" name="rname" id="keyword_field_random"><br>
-                            <br><br>
-                            <p><a id="keyword_button" class="btn btn-primary btn-lg" href="#" role="button">get password!</a></p>
-<!--                            <button type="button" id="keyword_button">get password!!</button>-->
-                        </form>                        <br><br>
-                        <div id="random_password" style="margin-top:50px text-align:center"></div>
-                    </div>
+                  <li class="active"><a data-toggle="tab" href="#funny">funny password</a></li>
+                  <li><a data-toggle="tab" href="#keyword">keyword</a></li>
+                  <li><a data-toggle="tab" href="#random">random</a></li>
+              </ul>
+          </div>
+      </div>
 
-                    
-                    
-                    
-                </div>                
-                
-                
-                
-                </div>
-            
-        </div>
-        
-        
-        
-    
-    
-    
-    </body>
+      <div class="row">
+        <div id="my-tab-content" class="tab-content" style="text-align:center">
+
+            <br><br>
+
+            <div class="tab-pane fade in active" id="funny">
+            <p class="desc">Click on generate to spew a strong and funny password from the Ethereal Broth.</p><br>
+                <p><a id="funny_button" class="btn btn-primary btn-lg" href="#" role="button">Generate!</a></p>
+                <br><br>
+                <div id="funny_password" style="margin-top:50px text-align:center"></div>
+            </div>
+            <div class="tab-pane fade" id="keyword">
+                <form>
+                  enter keyword: &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="fname" id="keyword_field_count"><br><br>
+                  enter website name: <input type="text" name="wname" id="website_field"><br>
+
+                  <br><br>
+                  <p><a id="keyword_button" class="btn btn-primary btn-lg" href="#" role="button">get password!</a></p>
+                  <!--                            <button type="button" id="keyword_button">get password!!</button>-->
+              </form>
+              <!--                        <p><a class="btn btn-primary btn-lg" href="#" role="button">get password!</a></p>-->
+              <br><br>
+              <div id="keyword_password" style="margin-top:50px text-align:center"></div>
+
+          </div>
+          <div class="tab-pane fade" id="random">
+            <form>
+              enter password length: <input type="text" name="rname" id="keyword_field_random"><br>
+              <br><br>
+              <p><a id="keyword_button" class="btn btn-primary btn-lg" href="#" role="button">get password!</a></p>
+              <!--                            <button type="button" id="keyword_button">get password!!</button>-->
+          </form>                        <br><br>
+          <div id="random_password" style="margin-top:50px text-align:center"></div>
+      </div>
+  </div>                
+</div>
+
+</div>
+
+</body>
 
 </html>

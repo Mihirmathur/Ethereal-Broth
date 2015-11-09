@@ -49,11 +49,11 @@ $(document).ready(function(){
     })
     
     $('#funny_button').click(function(){
-            $('#funny_password').html('<p>'+anvGenerator()+'</p>');
+            $('#funny_password').html('<p class = "pw">'+anvGenerator()+'</p>');
     });
     
     $('#keyword_button').click(function(){
-            $('#keyword_password').html('<p>'+countPassGenerator($('input[name=fname]').val(), $('input[name=wname]').val())+'</p>');
+            $('#keyword_password').html('<p class = "pw">'+countPassGenerator($('input[name=fname]').val(), $('input[name=wname]').val())+'</p>');
     });
     
     //problems
@@ -61,7 +61,7 @@ $(document).ready(function(){
             var keyCode = (event.keyCode ? event.keyCode : event.which);   
             if (keyCode == 13) {
                 var $keyword = $('input[name=fname]').val(); 
-                    $('#keyword_password').html('<p>'+countPassGenerator($('input[name=fname]').val(), $('input[name=wname]').val())+'</p>');
+                    $('#keyword_password').html('<p class = "pw">'+countPassGenerator($('input[name=fname]').val(), $('input[name=wname]').val())+'</p>');
             }
     });
     
