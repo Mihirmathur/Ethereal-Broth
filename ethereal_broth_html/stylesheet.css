@@ -12,21 +12,40 @@ h4{
     color:white;
 }
 
+<<<<<<< HEAD
 #ethereal_title{
 -webkit-transition: all .5s ease;
 }
 
 #ethereal_title:hover{
 	color: #993333;
+=======
+#keyword_field_count {
+    border:none;
+}
+
+#keyword_field_count:focus {
+    outline-width:none;
+    outline:none;
+    border:none;
+}
+
+#website_field {
+    border:none;
+}
+
+#website_field:focus {
+    outline-width:none;
+    outline:none;
+    border:none;
+>>>>>>> ea00c9f1c8303efd5f2a8d4ea74ee64d2e9771a2
 }
 
 .pink_color{
 /*    color:#993333;*/
 }
 
-.pink_button{
-/*    background-color:#993333;   */
-}
+
 
 .panel {
     margin-top: 300px;

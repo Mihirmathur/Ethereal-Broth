@@ -38,18 +38,56 @@ function randPassGenerator(passLength){
            password =  password.concat(getRandAlpha());
         }
 
-        password = getScrambledStr(password);
-        return password;
+        return getScrambledStr(password);
     }
 
+function getRandAlpha(){
+    return String.fromCharCode(97 + Math.floor(Math.random()*26));
+}
+
+function getRandDigit(){
+    return Math.floor(Math.random()*10);
+}
+
+function getRandSpecChar(){
+    return "!@#$%&*"[Math.floor(Math.random()*7)];
+}
+
+function getNumNums(num){
+    return Math.floor(Math.random()*num);
+
+}
+
+function getScrambledStr(str){
+    var newStr = str;
+    for (i = 0; i < str.length; i++){
+        var first = Math.floor(Math.random()*str.length);
+        var second = Math.floor(Math.random()*str.length);
+
+        var temp = newStr[first];
+        newStr[first] = newStr[second];
+        newStr[second] = temp;
+    }
+
+    return newStr;
+}
+
+
 $(document).ready(function(){
+    console.log('hi');
+    console.log(10);
     $('.nav-tabs a').click(function (e) {
           e.preventDefault()
           $(this).tab('show')
     })
     
     $('#funny_button').click(function(){
+<<<<<<< HEAD
             $('#funny_password').html('<p class = "pw">'+anvGenerator()+'</p>');
+=======
+            console.log('anv test');
+            $('#funny_password').html('<p>'+anvGenerator()+'</p>');
+>>>>>>> ea00c9f1c8303efd5f2a8d4ea74ee64d2e9771a2
     });
     
     $('#keyword_button').click(function(){
@@ -60,18 +98,34 @@ $(document).ready(function(){
     $('#keyword_field').keydown(function(event){ 
             var keyCode = (event.keyCode ? event.keyCode : event.which);   
             if (keyCode == 13) {
+<<<<<<< HEAD
                 var $keyword = $('input[name=fname]').val(); 
                     $('#keyword_password').html('<p class = "pw">'+countPassGenerator($('input[name=fname]').val(), $('input[name=wname]').val())+'</p>');
+=======
+                $('#keyword_password').html('<p>'+countPassGenerator($('input[name=fname]').val(), $('input[name=wname]').val())+'</p>');
+>>>>>>> ea00c9f1c8303efd5f2a8d4ea74ee64d2e9771a2
             }
     });
     
     $('#random_button').click(function(){
-            var $pass_length = parseInt($(('input[name=rname]').val()));
-            var $password = randPassGenerator($pass_length);
-            $('#random_password').html('<p>'+$password+'</p>');
+            console.log($('input[name=rname]').val());
+            $('#random_password').html('<p>'+randPassGenerator($('input[name=rname]').val())+'</p>');
     });
 //    $('#hey').append($keyword);
 //    changeColor($('#ethereal_title'), 0);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
